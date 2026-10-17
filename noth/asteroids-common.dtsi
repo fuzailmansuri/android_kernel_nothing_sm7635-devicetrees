@@ -13,10 +13,6 @@
 	usb-repeater = <&pmiv0104_eusb2_repeater>;
 };
 
-&mem_offline {
-	status = "disabled";
-};
-
 &pm7550_l22 {
 	regulator-min-microvolt = <3300000>;
 	regulator-max-microvolt = <3300000>;
