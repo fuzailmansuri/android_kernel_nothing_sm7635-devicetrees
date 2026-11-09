@@ -170,7 +170,9 @@
 };
 
 &soc {
-	/delete-node/ ramoops_region;
+	ramoops_region {
+		status = "disabled";
+	};
 
 	bootloader_log {
 		compatible = "nothing,bootloader_log";

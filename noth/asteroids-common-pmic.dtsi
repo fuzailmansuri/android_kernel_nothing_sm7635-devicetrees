@@ -102,7 +102,9 @@
 	/delete-node/ sys-therm-2;
 	/delete-node/ sys-therm-3;
 	/delete-node/ sys-therm-4;
-	/delete-node/ sys-therm-5;
+	sys-therm-5 {
+		status = "disabled";
+	};
 	/delete-node/ sys-therm-6;
 	/delete-node/ sys-therm-7;
 	/delete-node/ sys-therm-10;
