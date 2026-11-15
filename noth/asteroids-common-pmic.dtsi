@@ -98,16 +98,31 @@
 };
 
 &thermal_zones {
-	/delete-node/ sys-therm-1;
-	/delete-node/ sys-therm-2;
-	/delete-node/ sys-therm-3;
-	/delete-node/ sys-therm-4;
+	/* DTBOs cannot delete these inherited nodes from the base DTB. */
+	sys-therm-1 {
+		status = "disabled";
+	};
+	sys-therm-2 {
+		status = "disabled";
+	};
+	sys-therm-3 {
+		status = "disabled";
+	};
+	sys-therm-4 {
+		status = "disabled";
+	};
 	sys-therm-5 {
 		status = "disabled";
 	};
-	/delete-node/ sys-therm-6;
-	/delete-node/ sys-therm-7;
-	/delete-node/ sys-therm-10;
+	sys-therm-6 {
+		status = "disabled";
+	};
+	sys-therm-7 {
+		status = "disabled";
+	};
+	sys-therm-10 {
+		status = "disabled";
+	};
 
 	ap_ntc {
 		polling-delay-passive = <0>;
