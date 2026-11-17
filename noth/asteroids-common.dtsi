@@ -160,7 +160,8 @@
 		reg = <0x0 0x81f20000 0x0 0x400000>;
 		size = <0x400000>;
 		console-size = <0x200000>;
-		pmsg-size = <0x200000>;
+		pmsg-size = <0x100000>;
+		record-size = <0x100000>;
 		mem-type = <2>;
 	};
 };
